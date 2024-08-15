@@ -23,6 +23,8 @@ module.exports = (sequelize, DataTypes) => {
   UserGroup.init({
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
       primaryKey: true
     },
     UserId: DataTypes.INTEGER,
